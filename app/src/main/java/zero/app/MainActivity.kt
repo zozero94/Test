@@ -1,17 +1,21 @@
 package zero.app
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.material.TextButton
 import dagger.hilt.android.AndroidEntryPoint
+import zero.app.ui.retrofit.RetrofitActivity
 import zero.app.ui.theme.TestTheme
+
+enum class Actions(val action: (context: Context) -> Intent) {
+    Retrofit({ RetrofitActivity.getIntent(it) })
+}
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -20,23 +24,15 @@ class MainActivity : ComponentActivity() {
         setContent {
             TestTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
-                    Greeting("Android")
+                LazyColumn {
+                    items(Actions.values()) { item ->
+                        TextButton(onClick = { startActivity(item.action(this@MainActivity)) }) {
+                            Text(text = item.name)
+                        }
+                    }
+
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    TestTheme {
-        Greeting("Android")
     }
 }
