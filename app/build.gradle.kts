@@ -62,6 +62,8 @@ dependencies {
     implementation(Dep.Square.timber)
     implementation(Dep.Square.serializationConverter)
 
+    implementation(Dep.Accompanist.permissions)
+
     implementation(Dep.Kotlin.Serialization.serialization)
     kapt(Dep.Kotlin.Serialization.serializationPlugin)
 

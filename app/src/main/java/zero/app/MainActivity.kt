@@ -10,11 +10,13 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
 import androidx.compose.material.TextButton
 import dagger.hilt.android.AndroidEntryPoint
-import zero.app.ui.retrofit.RetrofitActivity
-import zero.app.ui.theme.TestTheme
+import zero.app.app.notification.NotificationActivity
+import zero.app.app.retrofit.RetrofitActivity
+import zero.app.app.theme.TestTheme
 
 enum class Actions(val action: (context: Context) -> Intent) {
-    Retrofit({ RetrofitActivity.getIntent(it) })
+    Retrofit({ RetrofitActivity.getIntent(it) }),
+    Notification({ NotificationActivity.getIntent(it) })
 }
 
 @AndroidEntryPoint

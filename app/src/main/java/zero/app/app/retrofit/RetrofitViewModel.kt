@@ -1,4 +1,4 @@
-package zero.app.ui.retrofit
+package zero.app.app.retrofit
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

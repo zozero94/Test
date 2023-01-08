@@ -36,12 +36,16 @@ object Dep {
         const val viewBinding = "androidx.compose.ui:ui-viewbinding:1.2.1"
     }
 
+    object Accompanist {
+        const val permissions = "com.google.accompanist:accompanist-permissions:0.28.0"
+    }
+
     object Kotlin {
         private const val version = "1.7.21"
 
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
 
-        object Serialization{
+        object Serialization {
             const val serialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1"
             const val serializationPlugin = "org.jetbrains.kotlin:kotlin-serialization:$version"
         }

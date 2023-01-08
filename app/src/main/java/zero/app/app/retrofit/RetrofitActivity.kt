@@ -1,4 +1,4 @@
-package zero.app.ui.retrofit
+package zero.app.app.retrofit
 
 import android.content.Context
 import android.content.Intent
@@ -12,7 +12,7 @@ import androidx.compose.material.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import dagger.hilt.android.AndroidEntryPoint
-import zero.app.ui.theme.TestTheme
+import zero.app.app.theme.TestTheme
 
 @AndroidEntryPoint
 class RetrofitActivity : ComponentActivity() {
