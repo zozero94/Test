@@ -1,4 +1,4 @@
-package zero.app.app.notification
+package zero.ui.notification
 
 import android.app.NotificationChannel
 import android.app.NotificationChannelGroup
@@ -38,7 +38,7 @@ class V26ChannelManager constructor(private val context: Context) : ChannelManag
                 foundChannel,
                 channel.groupId,
                 channelId,
-                if (channel.channelName != null) context.getString(channel.channelName)+"1" else "",
+                if (channel.channelName != null) context.getString(channel.channelName) + "1" else "",
                 true,
                 channel.showBadge
             )

@@ -1,4 +1,4 @@
-package zero.app.app.notification
+package zero.ui.notification
 
 import androidx.annotation.StringRes
 import zero.app.R

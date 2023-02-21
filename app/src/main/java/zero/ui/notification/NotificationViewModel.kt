@@ -1,4 +1,4 @@
-package zero.app.app.notification
+package zero.ui.notification
 
 import android.app.Notification
 import android.content.Context

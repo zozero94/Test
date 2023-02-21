@@ -1,4 +1,4 @@
-package zero.app
+package zero.app.ui.main
 
 import android.content.Context
 import android.content.Intent
@@ -9,10 +9,12 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
 import androidx.compose.material.TextButton
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import dagger.hilt.android.AndroidEntryPoint
-import zero.app.app.notification.NotificationActivity
-import zero.app.app.retrofit.RetrofitActivity
-import zero.app.app.theme.TestTheme
+import zero.ui.notification.NotificationActivity
+import zero.ui.retrofit.RetrofitActivity
+import zero.ui.theme.TestTheme
 
 enum class Actions(val action: (context: Context) -> Intent) {
     Retrofit({ RetrofitActivity.getIntent(it) }),
@@ -36,5 +38,18 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+}
+
+@Composable
+fun Greeting(name: String) {
+    Text(text = "Hello $name!")
+}
+
+@Preview(showBackground = true)
+@Composable
+fun DefaultPreview() {
+    TestTheme {
+        Greeting("Android")
     }
 }

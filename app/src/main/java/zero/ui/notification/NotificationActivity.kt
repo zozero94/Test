@@ -1,4 +1,4 @@
-package zero.app.app.notification
+package zero.ui.notification
 
 import android.Manifest
 import android.content.Context
@@ -20,7 +20,7 @@ import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.PermissionStatus
 import com.google.accompanist.permissions.rememberPermissionState
 import dagger.hilt.android.AndroidEntryPoint
-import zero.app.app.theme.TestTheme
+import zero.ui.theme.TestTheme
 
 @AndroidEntryPoint
 @OptIn(ExperimentalPermissionsApi::class)

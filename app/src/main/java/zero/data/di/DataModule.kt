@@ -1,4 +1,4 @@
-package zero.app.data.di
+package zero.data.di
 
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
@@ -10,11 +10,9 @@ import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import retrofit2.Converter
 import retrofit2.Retrofit
-import retrofit2.create
 import timber.log.Timber
-import zero.app.data.source.remote.TestApi
-import zero.app.data.source.remote.ZeroCallAdapterFactory
-import zero.app.data.source.remote.ZeroConverterFactory
+import zero.data.source.remote.ZeroCallAdapterFactory
+import zero.data.source.remote.ZeroConverterFactory
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -54,6 +52,5 @@ class DataModule {
         .baseUrl("https://raw.githubusercontent.com/")
         .build()
 
-    @Provides
-    fun provideTestApi(retrofit: Retrofit): TestApi = retrofit.create()
+
 }

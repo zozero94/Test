@@ -1,4 +1,4 @@
-package zero.app.data.source.remote
+package zero.data.source.remote
 
 import retrofit2.*
 import timber.log.Timber

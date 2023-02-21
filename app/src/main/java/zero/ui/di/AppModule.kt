@@ -1,4 +1,4 @@
-package zero.app.app.di
+package zero.ui.di
 
 import android.content.Context
 import android.os.Build
@@ -8,9 +8,9 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import zero.app.app.notification.ChannelManager
-import zero.app.app.notification.Channels
-import zero.app.app.notification.V26ChannelManager
+import zero.ui.notification.ChannelManager
+import zero.ui.notification.Channels
+import zero.ui.notification.V26ChannelManager
 
 @Module
 @InstallIn(SingletonComponent::class)

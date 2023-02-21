@@ -1,4 +1,4 @@
-package zero.app.data.source.remote
+package zero.data.source.remote
 
 import okhttp3.RequestBody
 import okhttp3.ResponseBody

@@ -1,4 +1,4 @@
-package zero.app.data.model
+package zero.data.model
 
 @kotlinx.serialization.Serializable
 data class Rule(

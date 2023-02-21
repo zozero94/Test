@@ -1,11 +1,11 @@
-package zero.app.app.retrofit
+package zero.ui.retrofit
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import timber.log.Timber
-import zero.app.data.source.remote.TestApi
+import zero.data.source.remote.TestApi
 import javax.inject.Inject
 
 @HiltViewModel

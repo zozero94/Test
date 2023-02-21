@@ -10,7 +10,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:name=".ZeroApplication"
+        android:name="zero.ZeroApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -18,7 +18,7 @@
         android:theme="@style/Theme.App"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.App">
@@ -32,8 +32,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".app.retrofit.RetrofitActivity" />
-        <activity android:name=".app.notification.NotificationActivity" />
+        <activity android:name="zero.ui.retrofit.RetrofitActivity" />
+        <activity android:name="zero.ui.notification.NotificationActivity" />
     </application>
 
 </manifest>
