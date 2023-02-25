@@ -55,6 +55,9 @@ dependencies {
     implementation(Dep.Compose.ui)
     implementation(Dep.Compose.tooling)
     implementation(Dep.Compose.material)
+
+    implementation(Dep.Accompanist.Pager)
+
     implementation(Dep.Kotlin.Coroutine.coroutineAndroid)
     implementation(Dep.Kotlin.Coroutine.coroutineCore)
     implementation(Dep.Kotlin.reflect)

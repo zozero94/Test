@@ -36,6 +36,10 @@ object Dep {
         const val viewBinding = "androidx.compose.ui:ui-viewbinding:1.2.1"
     }
 
+    object Accompanist{
+        const val Pager = "com.google.accompanist:accompanist-pager:0.28.0"
+    }
+
     object Kotlin {
         private const val version = "1.7.21"
 
