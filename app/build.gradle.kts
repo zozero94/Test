@@ -49,14 +49,20 @@ dependencies {
 
     implementation(Dep.Android.androidxCore)
     implementation(Dep.Android.appCompat)
+    implementation(Dep.Android.startUp)
     implementation(Dep.Lifecycle.viewModel)
     implementation(Dep.Lifecycle.composeViewModel)
     implementation(Dep.Compose.activity)
     implementation(Dep.Compose.ui)
     implementation(Dep.Compose.tooling)
     implementation(Dep.Compose.material)
+    implementation(Dep.Compose.lifecycle)
 
     implementation(Dep.Accompanist.Pager)
+
+    implementation(Dep.Paging3.paging3)
+    implementation(Dep.Paging3.compose)
+    implementation(Dep.Paging3.ktx)
 
     implementation(Dep.Kotlin.Coroutine.coroutineAndroid)
     implementation(Dep.Kotlin.Coroutine.coroutineCore)
@@ -65,6 +71,10 @@ dependencies {
     implementation(Dep.Square.okhttp3Logging)
     implementation(Dep.Square.timber)
     implementation(Dep.Square.serializationConverter)
+
+    implementation(Dep.Room.room)
+    kapt(Dep.Room.roomCompiler)
+    implementation(Dep.Room.paging)
 
     implementation(Dep.Coil.coil)
 

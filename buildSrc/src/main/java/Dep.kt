@@ -15,6 +15,7 @@ object Dep {
     object Android {
         const val androidxCore = "androidx.core:core-ktx:1.9.0"
         const val appCompat = "androidx.appcompat:appcompat:1.5.1"
+        const val startUp = "androidx.startup:startup-runtime:1.1.1"
     }
 
     object Lifecycle {
@@ -23,17 +24,31 @@ object Dep {
     }
 
     object Coil {
-        const val coil = "io.coil-kt:coil-compose:2.2.1"
+        const val coil = "io.coil-kt:coil-compose:2.4.0"
+    }
+
+    object Room {
+        const val room = "androidx.room:room-ktx:2.5.1"
+        const val roomCompiler = "androidx.room:room-compiler:2.5.1"
+        const val paging = "androidx.room:room-paging:2.5.1"
+    }
+
+    object Paging3 {
+        const val paging3 = "androidx.paging:paging-runtime:3.1.1"
+        const val compose = "androidx.paging:paging-compose:1.0.0-alpha17"
+        const val ktx = "androidx.paging:paging-runtime-ktx:3.1.1"
+
     }
 
     object Compose {
-        const val version = "1.4.0-alpha02"
+        const val version = "1.4.2"
 
         const val ui = "androidx.compose.ui:ui:${version}"
         const val material = "androidx.compose.material:material:${version}"
         const val tooling = "androidx.compose.ui:ui-tooling:${version}"
         const val activity = "androidx.activity:activity-compose:1.5.1"
         const val viewBinding = "androidx.compose.ui:ui-viewbinding:1.2.1"
+        const val lifecycle = "androidx.lifecycle:lifecycle-runtime-compose:2.6.1"
     }
 
     object Accompanist{
@@ -41,7 +56,7 @@ object Dep {
     }
 
     object Kotlin {
-        private const val version = "1.7.21"
+        private const val version = "1.8.10"
 
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
         const val parcelizePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.20"
